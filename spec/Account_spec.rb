@@ -15,4 +15,8 @@ describe Account do
   it 'starts with a balance of 0' do
     expect(account.balance).to eq 0
   end
+
+  it 'increases total balance with' do
+    expect { account.credit(100) }.to change { account.balance }.by 100
+  end
 end

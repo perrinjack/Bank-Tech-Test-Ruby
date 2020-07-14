@@ -6,4 +6,6 @@ class Account
     @transactions = []
     @balance = 0
 end
+
+
 end
