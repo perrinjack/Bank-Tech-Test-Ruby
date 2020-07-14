@@ -11,5 +11,9 @@ def credit(amount)
     @balance += amount
 end
 
+def withdraw(amount)
+    @balance -= amount
+end
+
 
 end

@@ -21,6 +21,6 @@ describe Account do
   end
 
   it 'decreases total balance with' do
-    expect { account.deposit(100) }.to change { account.balance }.by -100
+    expect { account.withdraw(100) }.to change { account.balance }.by -100
   end
 end
