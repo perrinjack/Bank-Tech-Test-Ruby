@@ -18,5 +18,7 @@ end
     @transactions.push(Transaction.new(amount, 'debit', @balance))
   end
 
-  def print_statement; end
+  def print_statement
+  @statement = Statement.new(@transactions)
+  end
 end
