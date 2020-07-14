@@ -7,8 +7,24 @@ class Statement
   end
 
   def prepare_header
-    return 'date || credit || debit || balance'
+    return 'date || credit || debit || balance \n'
   end
 
-  
+  def print_statement
+    return prepare_header + prepare_body.join()
+  end
+
+  def prepare_body
+    @transactions.map do |transaction| 
+      filter(transaction)
+    end
+  end
+
+  def filter(transaction)
+    if transaction.type == 'credit'
+      return "#{transaction.date} || #{transaction.value} || || #{transaction.post_transaction_balance}\n"
+    else
+      return "#{transaction.date} || || #{transaction.value} || #{transaction.post_transaction_balance}\n"
+    end
+  end
 end
