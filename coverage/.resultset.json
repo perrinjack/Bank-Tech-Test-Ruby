@@ -1,0 +1,29 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/PerrinJ/Projects/bank_tech_test/spec/Account_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/PerrinJ/Projects/bank_tech_test/lib/Account.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1594717210
+  }
+}
