@@ -34,11 +34,17 @@ Found the task relatively simple in most parts. Two areas where I experienced a 
 
 * Did spend a little too long figuring out using the newline character, as it can only be used within double quotes.
 
+* After receiving feedback I realised that dependency injection was needed to ensure th transaction class wasn't too closely coupled to the account class. This was introduced in th latest commits and allowed for mocking of the transaction class.
+
+* Test Coverage of 98.97% achieved.
+
 ### Testing
 
 * Run tests using `rspec`
 * Use `rubocop` to lint code
-* Test coverage shown with `simplecov`
+* Test coverage shown with `simplecov`. 
+
+
 
 ### Installation
 
