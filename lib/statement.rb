@@ -5,4 +5,10 @@ class Statement
   def initialize(transactions)
     @transactions = transactions
   end
+
+  def prepare_header
+    return 'date || credit || debit || balance'
+  end
+
+  
 end
