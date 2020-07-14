@@ -1,3 +1,4 @@
 gem 'simplecov'
 gem 'rspec'
 gem 'simplecov-console'
+gem 'date'
