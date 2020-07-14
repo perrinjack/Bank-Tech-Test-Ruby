@@ -15,6 +15,6 @@ end
 
   def withdraw(amount)
     @balance -= amount
-    @transactions.push(Transaction.new(amount, 'credit'))
+    @transactions.push(Transaction.new(amount, 'debit'))
   end
 end
