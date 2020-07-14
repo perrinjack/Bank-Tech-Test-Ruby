@@ -16,7 +16,7 @@ describe Statement do
   end
 
   it 'prepare header, prepares the statements header' do
-    expect(statement.prepare_header).to eq 'date || credit || debit || balance \n'
+    expect(statement.prepare_header).to eq "date || credit || debit || balance \n"
   end
 
   it 'print statement returns statement' do
@@ -28,6 +28,6 @@ describe Statement do
     allow(transaction2).to receive(:type).and_return('debit')
     allow(transaction2).to receive(:post_transaction_balance).and_return(50)
     allow(transaction2).to receive(:date).and_return('15/10/2020')
-    expect(statement.print_statement).to eq "date || credit || debit || balance \\n15/10/2020 || 100 || || 100\n15/10/2020 || || 50 || 50\n"
+    expect(statement.print_statement).to eq "date || credit || debit || balance \n15/10/2020 || 100 || || 100\n15/10/2020 || || 50 || 50\n"
   end
 end

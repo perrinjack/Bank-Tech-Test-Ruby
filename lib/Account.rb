@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+require_relative '../lib/statement.rb'
 require_relative '../lib/transaction.rb'
 class Account
   attr_reader :transactions, :balance
@@ -20,5 +20,6 @@ end
 
   def print_statement
     @statement = Statement.new(@transactions)
+    print @statement.print_statement
   end
 end
