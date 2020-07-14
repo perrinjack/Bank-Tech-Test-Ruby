@@ -14,4 +14,8 @@ describe Statement do
   it 'Statement has a list of transactions that have occurred' do
     expect(statement.transactions.length).to eq 2
   end
+
+  it 'prepare header, prepares the statements header' do
+    expect(statement.prepare_header).to eq 'date || credit || debit || balance'
+  end
 end
