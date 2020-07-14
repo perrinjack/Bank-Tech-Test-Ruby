@@ -10,11 +10,11 @@ end
 
   def credit(amount)
     @balance += amount
-    Transaction.new(amount, 'credit')
+    @transactions.push(Transaction.new(amount, 'credit'))
   end
 
   def withdraw(amount)
     @balance -= amount
-    Transaction.new(amount, 'credit')
+    @transactions.push(Transaction.new(amount, 'credit'))
   end
 end
