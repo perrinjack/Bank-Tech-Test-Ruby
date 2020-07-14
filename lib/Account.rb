@@ -19,6 +19,6 @@ end
   end
 
   def print_statement
-  @statement = Statement.new(@transactions)
+    @statement = Statement.new(@transactions)
   end
 end
