@@ -31,7 +31,7 @@
           null
         ]
       },
-      "/Users/PerrinJ/Projects/bank_tech_test/lib/Account.rb": {
+      "/Users/PerrinJ/Projects/bank_tech_test/lib/account.rb": {
         "lines": [
           null,
           null,
@@ -49,12 +49,30 @@
           1,
           1,
           null,
+          null
+        ]
+      },
+      "/Users/PerrinJ/Projects/bank_tech_test/spec/transaction_Spec.rb": {
+        "lines": [
           null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
           null,
           null
         ]
+      },
+      "/Users/PerrinJ/Projects/bank_tech_test/lib/transaction.rb": {
+        "lines": [
+
+        ]
       }
     },
-    "timestamp": 1594718924
+    "timestamp": 1594719508
   }
 }

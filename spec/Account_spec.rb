@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../lib/Account.rb'
+require_relative '../lib/account.rb'
 
 describe Account do
   let(:account) { Account.new }

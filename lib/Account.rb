@@ -7,13 +7,11 @@ class Account
     @balance = 0
 end
 
-def credit(amount)
+  def credit(amount)
     @balance += amount
-end
+  end
 
-def withdraw(amount)
+  def withdraw(amount)
     @balance -= amount
-end
-
-
+  end
 end
