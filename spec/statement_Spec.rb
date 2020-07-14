@@ -15,10 +15,6 @@ describe Statement do
     expect(statement.transactions.length).to eq 2
   end
 
-  it 'prepare header, prepares the statements header' do
-    expect(statement.prepare_header).to eq "date || credit || debit || balance \n"
-  end
-
   it 'print statement returns statement' do
     allow(transaction1).to receive(:value).and_return(100)
     allow(transaction1).to receive(:type).and_return('credit')

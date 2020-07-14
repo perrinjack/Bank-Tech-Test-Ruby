@@ -9,4 +9,4 @@ class Transaction
     @post_transaction_balance = post_transaction_balance
     @date = Time.now.strftime('%d/%m/%Y')
   end
-  end
+end

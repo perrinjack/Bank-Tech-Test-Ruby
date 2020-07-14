@@ -10,16 +10,16 @@ class Statement
     prepare_header + prepare_body.join
   end
 
-  def prepare_header
-    "date || credit || debit || balance \n"
-  end
-
-  private 
+  private
 
   def prepare_body
     @transactions.map do |transaction|
       filter(transaction)
     end
+  end
+
+  def prepare_header
+    "date || credit || debit || balance \n"
   end
 
   def filter(transaction)
