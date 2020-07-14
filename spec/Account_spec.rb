@@ -11,4 +11,8 @@ describe Account do
   it 'starts with an empty list of transactions' do
     expect(account.transactions).to eq []
   end
+
+  it 'starts with a balance of 0' do
+    expect(account.balance).to eq 0
+  end
 end
