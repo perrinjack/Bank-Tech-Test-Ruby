@@ -26,5 +26,11 @@ date || credit || debit || balance
 
 ## Approach
 
+Found the task relatively simple in most parts. Two areas where I experienced a little difficulty were: 
+
+* Mocking the Time.now used to access the current time.
+*cleaning up the large block of code used to mock a statement print. Lines 23-31 of the statement_Spec.rb is very DRY. On top of this the test returns \\n instead of \n for the newline character and I am not sure where it is getting this from since I only use \n in my code. 
+
+
 
 
