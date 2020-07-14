@@ -1,7 +1,7 @@
 class Transaction
     
-    attr_reader :value 
+    attr_reader :value
     def initialize(amount)
-        @value = amount 
+        @value = amount
     end
   end
