@@ -17,6 +17,4 @@ end
     @balance -= amount
     @transactions.push(Transaction.new(amount, 'debit', @balance))
   end
-
-
 end
