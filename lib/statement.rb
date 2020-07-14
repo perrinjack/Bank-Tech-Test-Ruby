@@ -6,13 +6,15 @@ class Statement
     @transactions = transactions
   end
 
+  def print_statement
+    prepare_header + prepare_body.join
+  end
+
   def prepare_header
     "date || credit || debit || balance \n"
   end
 
-  def print_statement
-    prepare_header + prepare_body.join
-  end
+  private 
 
   def prepare_body
     @transactions.map do |transaction|

@@ -8,18 +8,18 @@ class Account
     @balance = 0
 end
 
-  def credit(amount)
+  def credit(amount, money_event = Transaction  )
     @balance += amount
-    @transactions.push(Transaction.new(amount, 'credit', @balance))
+    @transactions.push(money_event.new(amount, 'credit', @balance))
   end
 
-  def withdraw(amount)
+  def withdraw(amount, money_event = Transaction )
     @balance -= amount
-    @transactions.push(Transaction.new(amount, 'debit', @balance))
-  end
+    @transactions.push(money_event.new(amount, 'debit', @balance))
+  end 
 
-  def print_statement
-    @statement = Statement.new(@transactions)
+  def print_statement(statement = Statement)
+    @statement = statement.new(@transactions)
     print @statement.print_statement
   end
 end
