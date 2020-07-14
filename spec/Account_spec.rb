@@ -3,7 +3,9 @@
 require_relative '../lib/account.rb'
 
 describe Account do
-  let(:account) { Account.new }
+  let(:transaction) { double(:Transaction) }
+  let(:statement) { double(:Statement) }
+  let(:account) { Account.new(transaction, statement ) }
   it 'Account.new creates instance of an account' do
     expect(account).to be_instance_of Account
   end
@@ -17,10 +19,12 @@ describe Account do
   end
 
   it 'increases total balance with' do
+    allow(transaction).to receive(:new).with(100, "credit", 100)
     expect { account.credit(100) }.to change { account.balance }.by 100
   end
 
   it 'decreases total balance with' do
+    allow(transaction).to receive(:new).with(100, "debit", -100)
     expect { account.withdraw(100) }.to change { account.balance }.by -100
   end
 end
