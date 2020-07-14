@@ -1,6 +1,6 @@
 class Transaction
     
-    def initialize
+    def initialize()
   
     end
   end
