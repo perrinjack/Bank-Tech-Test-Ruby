@@ -34,8 +34,23 @@ Found the task relatively simple in most parts. Two areas where I experienced a 
 
 * Did spend a little too long figuring out using the newline character, as it can only be used within double quotes.
 
+### Testing
 
-![Test Coverage](coverage.png)
+* Run tests using `rspec`
+* Use `rubocop` to lint code
+* Test coverage shown with `simplecov`
 
+### Installation
+
+* Clone this repo to your local machine.
+* Install dependencies:
+```
+$ bundle install
+```
+Then run:
+```
+$ irb -r './lib/account.rb'
+```
+This will open the program in irb from which you will be able to interact with it.
 
 ![Results](Results.png)
